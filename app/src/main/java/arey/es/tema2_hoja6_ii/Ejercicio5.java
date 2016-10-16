@@ -1,5 +1,6 @@
 package arey.es.tema2_hoja6_ii;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -18,7 +19,7 @@ public class Ejercicio5 extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-       FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -30,7 +31,6 @@ public class Ejercicio5 extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_ejercicio5, menu);
         return true;
     }
@@ -42,9 +42,14 @@ public class Ejercicio5 extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        Intent anIntent;
+        switch (id) {
+            case R.id.Ejercicio6: anIntent = new Intent(this, Ejercicio6.class);
+                startActivity(anIntent);
+                return true;
+            case R.id.Ejercicio7: anIntent = new Intent(this, Ejercicio7.class);
+                startActivity(anIntent);
+                return true;
         }
 
         return super.onOptionsItemSelected(item);

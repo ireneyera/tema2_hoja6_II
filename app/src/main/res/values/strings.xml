@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">tema2_hoja6_II</string>
     <string name="action_settings">Settings</string>
+    <string name="Ejercicio6">Ejercicio 6</string>
+    <string name="title_activity_ejercicio6">Ejercicio 6</string>
+    <string name="GoogleAccess">Acceder a Google</string>
+    <string name="LosEnlacesAccess">Acceso a CPIFP Los Enlaces</string>
+    <string name="CNNAccess">Acceso a CNN</string>
+    <string name="Ejercicio7">Ejercicio 7</string>
+    <string name="Item1">Item 1</string>
+    <string name="Item2">Item 2</string>
+    <string name="Item3">Item 3</string>
 </resources>

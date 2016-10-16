@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="arey.es.tema2_hoja6_ii.Ejercicio5">
+    <item
+        android:title="@string/CNNAccess"
+        android:orderInCategory="102"
+        android:id="@+id/CNNAccess" />
+    <item
+        android:id="@+id/GoogleAccess"
+        android:orderInCategory="101"
+        android:title="@string/GoogleAccess"
+        app:showAsAction="never" />
+    <item
+        android:title="@string/LosEnlacesAccess"
+        android:orderInCategory="103"
+        android:id="@+id/LosEnlacesAccess" />
+</menu>

@@ -1,23 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="arey.es.tema2_hoja6_ii" >
+    package="arey.es.tema2_hoja6_ii">
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
             android:name=".Ejercicio5"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Ejercicio6"
+            android:label="@string/title_activity_ejercicio6"
+            android:parentActivityName=".Ejercicio5"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="arey.es.tema2_hoja6_ii.Ejercicio5" />
+        </activity>
+        <activity android:name=".Ejercicio7"></activity>
     </application>
 
 </manifest>
